@@ -1,0 +1,15 @@
+.navtext{
+  color: aliceblue;
+  font-size: 30px;
+  font-weight: bold;
+}
+.navbar-links a {
+  margin-right: 60px;
+}
+.navbar-links a:last-child {
+  margin-right: 0; /* no extra space on last item */
+}
+.icon {
+  width: 50px !important; /* force 50px width */
+  height: 50px !important; /* optional: make height same */
+}
