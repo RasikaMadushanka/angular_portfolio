@@ -13,3 +13,21 @@
   width: 50px !important; /* force 50px width */
   height: 50px !important; /* optional: make height same */
 }
+.navbar-nav {
+  gap: 30px; 
+}
+
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #212529; 
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+  }
+  .navbar-nav {
+    gap: 10px; 
+  }
+}
+.navbarColor {
+  background-color: #010018;
+}
