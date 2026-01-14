@@ -33,20 +33,4 @@ It’s fully **responsive, modern, and modular**, designed to highlight my work 
 
 ---
 
-## 🚀 Getting Started
 
-### Prerequisites
-
-Make sure you have installed:
-
-- [Node.js](https://nodejs.org/)  
-- [Angular CLI](https://angular.io/cli)  
-
-### Installation
-
-Clone the repository and install dependencies:
-
-```bash
-git clone https://github.com/your-username/angular-portfolio.git
-cd angular-portfolio
-npm install
