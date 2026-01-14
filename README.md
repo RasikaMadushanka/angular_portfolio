@@ -1,27 +1,52 @@
-# Portfolio
+# 🏆 Portfolio – Rasika Madushanka
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
+[![Angular](https://img.shields.io/badge/Angular-17-red)](https://angular.io/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)](https://www.typescriptlang.org/)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-5-purple)](https://getbootstrap.com/)
+[![CSS](https://img.shields.io/badge/CSS3-blueviolet)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 💻 About
 
-## Code scaffolding
+This is my **personal portfolio website** built with **Angular, TypeScript, Bootstrap, and CSS**, showcasing my **skills, projects, and experience** as a **Full Stack Developer**.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+It’s fully **responsive, modern, and modular**, designed to highlight my work and technical abilities.
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🔧 Tech Stack
 
-## Running unit tests
+- **Frontend:** Angular, TypeScript, HTML5, CSS3, Bootstrap  
+- **Tools:** Git, GitHub, VS Code  
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## 🌟 Features
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Clean and modern UI design with **creative color gradients**  
+- Fully responsive (desktop, tablet, mobile)  
+- Smooth navigation using Angular Routing  
+- Modular component-based architecture for scalability  
+- Showcase of real projects with **images, descriptions, and links**  
 
-## Further help
+---
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have installed:
+
+- [Node.js](https://nodejs.org/)  
+- [Angular CLI](https://angular.io/cli)  
+
+### Installation
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/your-username/angular-portfolio.git
+cd angular-portfolio
+npm install
