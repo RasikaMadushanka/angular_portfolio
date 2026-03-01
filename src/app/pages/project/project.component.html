@@ -1,8 +1,8 @@
-<section class="projects-section py-5" id="myproject">
+<section class="projects-section py-5" id="myproject" data-aos="fade-up">
   <div class="container">
 
     <!-- Section Title -->
-    <div class="text-center mb-5">
+    <div class="text-center mb-5" data-aos="zoom-in">
       <h2 class="section-title">My Projects</h2>
       <p class="section-subtitle">Some of my recent works and experiments</p>
     </div>
@@ -10,14 +10,14 @@
     <div class="row g-4">
 
       <!-- Project Card -->
-      <div class="col-md-6 col-lg-4" *ngFor="let project of projects">
+      <div class="col-md-6 col-lg-4" *ngFor="let project of projects" data-aos="fade-up">
         <div class="project-card">
 
           <!-- Image with Overlay -->
-          <div class="project-img">
+          <div class="project-img" data-aos="zoom-in">
             <img [src]="project.image" class="img-fluid" alt="Project Image">
 
-            <div class="project-overlay">
+            <div class="project-overlay" data-aos="fade-up">
               <h5>{{ project.title }}</h5>
               <p>{{ project.description }}</p>
               <a [href]="project.github" target="_blank" class="btn btn-gradient btn-sm">
@@ -27,17 +27,17 @@
           </div>
 
           <!-- Content -->
-          <div class="project-content">
+          <div class="project-content" data-aos="fade-up">
             <h5>{{ project.title }}</h5>
             <p>{{ project.description }}</p>
 
             <!-- Tech Stack -->
             <div class="tech-stack">
-              <span *ngFor="let tech of project.tech">{{ tech }}</span>
+              <span *ngFor="let tech of project.tech" data-aos="zoom-in">{{ tech }}</span>
             </div>
 
             <!-- Buttons -->
-            <div class="mt-3 d-flex gap-2">
+            <div class="mt-3 d-flex gap-2" data-aos="fade-up">
               <a [href]="project.github" target="_blank" class="btn btn-outline-light btn-sm">
                 GitHub
               </a>
