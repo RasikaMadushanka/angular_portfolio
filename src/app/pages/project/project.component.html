@@ -1,66 +1,59 @@
-    <section class="py-3" id="myproject">
-        <div class="container">
-            <div class="row g-4 " data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
-                data-aos-duration="2500">
-                <div class="col-12 col-md-6 col-lg-4 d-flex">
-                    <div class="aboutcard w-100 text-center">
-                        <img src="assets/images/studentManagemnt.png" style="width: 350px;" class="img-fluid">
-                        <p>My Student management Project</p>
-                        <a href="https://github.com/RasikaMadushanka"> <input type="button" value="Mycode"
-                                class="mybtn"></a>
+<section class="projects-section py-5" id="myproject">
+  <div class="container">
 
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 d-flex">
-                    <div class="aboutcard w-100 text-cente">
-                        <img src="assets/images/imart.png" style="width: 350px;" class="img-fluid">
-                        <p>My Imart Project</p>
-                        <a href="https://github.com/RasikaMadushanka"> <input type="button" value="Mycode"
-                                class="mybtn"></a>
+    <!-- Section Title -->
+    <div class="text-center mb-5">
+      <h2 class="section-title">My Projects</h2>
+      <p class="section-subtitle">Some of my recent works and experiments</p>
+    </div>
 
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 d-flex">
-                    <div class="aboutcard w-100 text-cente">
-                        <img src="assets/images/defence.png" style="width: 350px;" class="img-fluid">
-                        <p>My Defence System Project</p>
-                        <a href="https://github.com/RasikaMadushanka"> <input type="button" value="Mycode"
-                                class="mybtn"></a>
+    <div class="row g-4">
 
-                    </div>
-                </div>
+      <!-- Project Card -->
+      <div class="col-md-6 col-lg-4" *ngFor="let project of projects">
+        <div class="project-card">
 
-                <div class="col-12 col-md-6 col-lg-4 d-flex">
-                    <div class="aboutcard w-100 text-cente">
-                        <img src="assets/images/movieapi.png" style="width: 350px;" class="img-fluid">
-                        <p>My Movieapi Website</p>
-                        <a href="https://github.com/RasikaMadushanka"> <input type="button" value="Mycode"
-                                class="mybtn"></a>
+          <!-- Image with Overlay -->
+          <div class="project-img">
+            <img [src]="project.image" class="img-fluid" alt="Project Image">
 
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 d-flex">
-                    <div class="aboutcard w-100 text-cente">
-                        <img src="assets/images/tourists.png" style="width: 350px;" class="img-fluid">
-                        <p>My Tourists Website </p>
-                        <a href="https://github.com/RasikaMadushanka"> <input type="button" value="Mycode"
-                                class="mybtn"></a>
+            <div class="project-overlay">
+              <h5>{{ project.title }}</h5>
+              <p>{{ project.description }}</p>
+              <a [href]="project.github" target="_blank" class="btn btn-gradient btn-sm">
+                View Code
+              </a>
+            </div>
+          </div>
 
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 d-flex">
-                    <div class="aboutcard w-100 text-cente">
-                        <img src="assets/images/weather.png" style="width: 350px;display:inline-block;"
-                            class="img-fluid">
-                        <p>My Weather Website</p>
-                        <a href="https://github.com/RasikaMadushanka"> <input type="button" value="Mycode"
-                                class="mybtn"></a>
+          <!-- Content -->
+          <div class="project-content">
+            <h5>{{ project.title }}</h5>
+            <p>{{ project.description }}</p>
 
-                    </div>
-                </div>
-
+            <!-- Tech Stack -->
+            <div class="tech-stack">
+              <span *ngFor="let tech of project.tech">{{ tech }}</span>
             </div>
 
+            <!-- Buttons -->
+            <div class="mt-3 d-flex gap-2">
+              <a [href]="project.github" target="_blank" class="btn btn-outline-light btn-sm">
+                GitHub
+              </a>
+
+              <a *ngIf="project.demo"
+                 [href]="project.demo"
+                 target="_blank"
+                 class="btn btn-gradient btn-sm">
+                Live Demo
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
 
     </div>
-    </section>
+  </div>
+</section>

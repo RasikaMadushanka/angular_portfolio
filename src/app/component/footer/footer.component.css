@@ -1,28 +1,55 @@
-.footer {
-  background-color: #010018;
-  border-top: 2px solid rgba(36, 45, 209, 0.6);
-  box-shadow: 0 -4px 12px rgba(36, 45, 209, 0.3);
-  padding: 20px 0;
-  margin-top: 50px;
+/* FOOTER */
+.footer-section {
+  background: linear-gradient(135deg, #0b1220, #162238);
+  color: white;
+  padding: 50px 0;
 }
 
+/* HEADINGS */
+.footer-section h5 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #00f5ff;
+}
+
+/* LINKS */
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #e5e7eb;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #00f5ff;
+}
+
+/* ICONS */
+.footer-icons a {
+  margin-right: 12px;
+  transition: 0.3s;
+}
+
+.footer-icons a:hover {
+  transform: translateY(-3px);
+}
+
+/* COPYRIGHT */
 .footer-text {
-  color: #dcdcdc;
-  font-size: 14px;
-  margin-bottom: 10px;
+  color: #cbd5f1;
 }
 
-.footer-icons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.footer-icons img {
-  transition: transform 0.3s ease-in, filter 0.3s ease-in;
-}
-
-.footer-icons img:hover {
-  transform: scale(1.2);
-  filter: drop-shadow(0 0 8px #242DD1);
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .footer-section {
+    text-align: center;
+  }
 }

@@ -1,48 +1,78 @@
-.aboutborder {
-  width: 90%;
-  max-width: 1000px;
-  padding: 30px;
-  margin: 50px auto;
-  background: rgba(5, 3, 57, 0.92);
-  border-radius: 20px;
-  border: 2px solid rgba(36, 45, 209, 0.6);
-  box-shadow: 0 0 25px rgba(36, 45, 209, 0.3);
+/* SERVICES PAGE */
+.services-page {
+  background: linear-gradient(135deg, #0b1220, #162238);
+  color: white;
+  padding: 60px 0;
 }
 
-.aboutcard {
-  padding: 20px;
-  border-radius: 15px;
-  width: 100%;
-  height: 300px;
-  margin: auto;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(8px);
-  color: #fff;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease-in,
-    box-shadow 0.3s ease-in,
-    background 0.3s ease-in;
+/* SECTION TITLE */
+.section-title {
+  font-size: 40px;
+  font-weight: 700;
+  background: linear-gradient(45deg, #00f5ff, #ff00c8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.aboutcard:hover {
-  background: linear-gradient(135deg, #3b3dbd, #1a1b4f);
-  transform: scale(1.05);
-  /* zoom in */
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6),
-    0 0 12px rgba(36, 45, 209, 0.6);
+.section-subtitle {
+  color: #cbd5f1;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-.mycardtitle {
-  color: #00bfff;
-  text-decoration: underline;
-  text-align: center;
-  font-size: 25px;
-  font-weight: bold;
+/* SERVICE CARD */
+.service-card {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 24px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  transition: 0.4s ease;
+  height: 100%;
 }
 
-.cardtext {
-  color: #dcdcdc;
-  font-size: 15px;
-  font-style: italic;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 245, 255, 0.15);
+}
+
+/* ICON BOX */
+.icon-box {
+  font-size: 42px;
+  color: #00f5ff;
+  margin-bottom: 15px;
+}
+
+/* SERVICE LIST */
+.service-card ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.service-card ul li {
+  background: rgba(255, 255, 255, 0.05);
+  margin: 6px 0;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #e5e7eb;
+}
+
+/* CTA */
+.btn-gradient {
+  background: linear-gradient(45deg, #00f5ff, #ff00c8);
+  border: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn-gradient:hover {
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 30px;
+  }
 }
